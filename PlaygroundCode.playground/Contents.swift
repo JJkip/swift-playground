@@ -72,3 +72,33 @@ case 1000...4999:
 default:
     print("Just stay home")
 }
+
+//Understanding Arrays and Dictionaries
+var bookCollection = ["Tool of titan","Rework","FMovies"]
+bookCollection[1]
+bookCollection.append("Authority")
+bookCollection.count
+print(bookCollection)
+
+for index1 in 0...3 {
+    print(bookCollection[index1])
+}
+for index2 in 0...bookCollection.count - 1{
+    print(bookCollection[index2])
+}
+for book in bookCollection {
+    print(book)
+}
+var bookCollectionDict1 = ["1328683788": "Tool of Titans", "0307463745": "Rework", "1612060919": "Authority"]
+bookCollectionDict1["0307463745"]
+for (key, value) in bookCollectionDict1 {
+    print("ISBN: \(key)")
+    print("Title: \(value)")
+}
+
+var emojiDict: [String: String] = ["👻": "Ghost","💩":"Poop","😡":"Angry","😱":"Scream","👾":"Alien monster"]
+var wordToLookUp = "👻"
+var meaning = emojiDict[wordToLookUp]
+wordToLookUp = "😡"
+meaning = emojiDict[wordToLookUp]
+print(meaning)
