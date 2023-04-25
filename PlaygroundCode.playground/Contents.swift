@@ -99,9 +99,13 @@ for (key, value) in bookCollectionDict1 {
 var emojiDict: [String: String] = ["👻": "Ghost","💩":"Poop","😡":"Angry","😱":"Scream","👾":"Alien monster"]
 var wordToLookUp = "👻"
 var meaning = emojiDict[wordToLookUp]
+wordToLookUp = "😍"
+meaning = emojiDict[wordToLookUp]
 wordToLookUp = "😡"
 meaning = emojiDict[wordToLookUp]
-print(meaning!)
+if let meaning = meaning{
+    print(meaning)
+}
 
 //Understanding Optionals
 var jobTitle: String?
@@ -110,4 +114,11 @@ jobTitle = "iOS Developer"
 //Forced Unwrapping of optionals
 if jobTitle != nil {
     var message6 = "Your job title is " + jobTitle!
+}
+//Optional Binding
+if let jobTitleWithValue = jobTitle {
+    var message7 = "Your job title is " + jobTitleWithValue
+}
+if let jobTitle = jobTitle{
+    var message7 = "Your job title is " + jobTitle
 }
