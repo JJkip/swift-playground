@@ -101,4 +101,9 @@ var wordToLookUp = "👻"
 var meaning = emojiDict[wordToLookUp]
 wordToLookUp = "😡"
 meaning = emojiDict[wordToLookUp]
-print(meaning)
+print(meaning!)
+
+//Understanding Optionals
+var message4: String?
+message4 = "Hi there"
+ var message5 = message4 + "I am an iOS developer"
