@@ -104,6 +104,10 @@ meaning = emojiDict[wordToLookUp]
 print(meaning!)
 
 //Understanding Optionals
-var message4: String?
-message4 = "Hi there"
- var message5 = message4 + "I am an iOS developer"
+var jobTitle: String?
+jobTitle = "iOS Developer"
+ var message5 =  "Hi there, i am a " + jobTitle!
+//Forced Unwrapping of optionals
+if jobTitle != nil {
+    var message6 = "Your job title is " + jobTitle!
+}
